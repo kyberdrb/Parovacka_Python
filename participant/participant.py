@@ -1,8 +1,8 @@
 class Participant:
 
-    def __init__(self, pa_name, pa_has_partner):
+    def __init__(self, pa_name, pa_has_somebody_to_gift):
         self._name = pa_name
-        self._has_partner = pa_has_partner
+        self._has_somebody_to_gift = pa_has_somebody_to_gift
 
     @property
     def name(self):
@@ -13,9 +13,9 @@ class Participant:
         self._name = pa_name
 
     @property
-    def has_partner(self):
-        return self._has_partner
+    def has_somebody_to_gift(self):
+        return self._has_somebody_to_gift
 
-    @has_partner.setter
-    def has_partner(self, pa_has_partner):
-        self._has_partner = pa_has_partner
+    @has_somebody_to_gift.setter
+    def has_somebody_to_gift(self, pa_has_somebody_to_gift):
+        self._has_somebody_to_gift = pa_has_somebody_to_gift
