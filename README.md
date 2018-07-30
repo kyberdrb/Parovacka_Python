@@ -12,3 +12,6 @@ https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list
 http://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/ => how to make for loop with index
 
 https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure#24266885
+https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac
+https://code.tutsplus.com/tutorials/write-professional-unit-tests-in-python--cms-25835
+https://stackoverflow.com/questions/36931415/using-properties-in-python-clases-cause-maximum-recursion-depth-exceeded#36931502
