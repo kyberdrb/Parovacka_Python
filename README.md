@@ -16,3 +16,5 @@ https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac
 https://code.tutsplus.com/tutorials/write-professional-unit-tests-in-python--cms-25835
 https://stackoverflow.com/questions/36931415/using-properties-in-python-clases-cause-maximum-recursion-depth-exceeded#36931502
 http://python-textbok.readthedocs.io/en/1.0/Introduction_to_GUI_Programming.html#tkinter-basics
+
+https://stackoverflow.com/questions/3842155/is-there-a-way-to-make-the-tkinter-text-widget-read-only#24965264
