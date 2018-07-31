@@ -16,5 +16,9 @@ https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac
 https://code.tutsplus.com/tutorials/write-professional-unit-tests-in-python--cms-25835
 https://stackoverflow.com/questions/36931415/using-properties-in-python-clases-cause-maximum-recursion-depth-exceeded#36931502
 http://python-textbok.readthedocs.io/en/1.0/Introduction_to_GUI_Programming.html#tkinter-basics
-
 https://stackoverflow.com/questions/3842155/is-there-a-way-to-make-the-tkinter-text-widget-read-only#24965264
+https://stackoverflow.com/questions/26994168/printing-a-list-to-a-tkinter-text-widget#26994242
+https://stackoverflow.com/questions/23554872/why-does-pycharm-propose-to-change-method-to-static#23555313
+https://stackoverflow.com/questions/30556857/creating-a-static-class-with-no-instances#30556886
+https://stackoverflow.com/questions/3221908/is-it-possible-to-get-widget-settings-in-tkinter#3222000
+https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
