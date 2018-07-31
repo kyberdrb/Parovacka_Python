@@ -22,3 +22,4 @@ https://stackoverflow.com/questions/23554872/why-does-pycharm-propose-to-change-
 https://stackoverflow.com/questions/30556857/creating-a-static-class-with-no-instances#30556886
 https://stackoverflow.com/questions/3221908/is-it-possible-to-get-widget-settings-in-tkinter#3222000
 https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
+https://stackoverflow.com/questions/27966626/how-to-clear-delete-the-contents-of-a-tkinter-text-widget#27967664
