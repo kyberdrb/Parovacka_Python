@@ -3,6 +3,8 @@ from random import shuffle
 
 
 def sparuj():
+    print("SPARUJ ICH")
+
     # Vytvor unikatne dvojice
     zoznamUcastnikovStr = zoznamUcastnikov.get("1.0", "end-1c")
     zoznamUcastnikovPrvych = zoznamUcastnikovStr.split()
