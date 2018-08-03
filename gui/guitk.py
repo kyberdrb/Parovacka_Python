@@ -45,7 +45,7 @@ class GuiTk:
         self.assignments = assignment.Assignments(self.retrieve_list_of_participants())
         tk_ops.clear_text_widget(self.tw_participants)
         tk_ops.fill_text_box(self.tw_participants, self.assignments.gifters)
-        self.assignments.create_list_of_gift_takers()
+        self.assignments.create_list_of_giftees()
         self.display_couples()
 
     def retrieve_list_of_participants(self):
