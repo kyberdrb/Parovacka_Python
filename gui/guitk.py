@@ -1,6 +1,6 @@
 from tkinter import Tk, Text, Button
 import gui.tk_widget_operations as tk_ops
-from random import shuffle
+from assignment import assignment
 
 
 class GuiTk:
@@ -8,9 +8,12 @@ class GuiTk:
         self.master = pa_root_window
         self.set_up_window()
         self.add_widgets()
+        self.assignments = None
 
     def set_up_window(self):
         self.master.title("Párovačka")
+
+        # TODO - calculate window dimensions according to the screen resolution
         self.master.geometry("500x300")
         self.master.grid()
 
@@ -39,14 +42,10 @@ class GuiTk:
 
     def make_couples(self):
         tk_ops.clear_text_widget(self.tw_couples)
-        # TODO assign to Assignment object immediately at creation
-        # assignment = Assignment(self.retrieve_list_of_participants())
-        # TODO remove line underneath
-        gifters = self.retrieve_list_of_participants()
+        self.assignments = assignment.Assignments(self.retrieve_list_of_participants())
         tk_ops.clear_text_widget(self.tw_participants)
-        # tk_ops.fill_text_box(self.tw_participants, assignment.gifters)
-        tk_ops.fill_text_box(self.tw_participants, gifters)
-        # assignment.create_list_of_gift_takers()
+        tk_ops.fill_text_box(self.tw_participants, self.assignments.gifters)
+        self.assignments.create_list_of_gift_takers()
         self.display_couples()
 
     def retrieve_list_of_participants(self):
@@ -55,13 +54,7 @@ class GuiTk:
         return participants_names
 
     def display_couples(self):
-        # assignment.gifters
-        participants = self.retrieve_list_of_participants()
-        # TODO delegate final couple finding to Assignemt class -
-        # this method should only glue the gifter and giftee
-        # and display them next to each other in tw_couples text view
-        shuffle(participants)
-        tk_ops.fill_text_box(self.tw_couples, participants)
+        tk_ops.fill_text_box(self.tw_couples, self.assignments.giftees)
 
 
 if __name__ == "__main__":

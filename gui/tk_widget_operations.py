@@ -1,40 +1,36 @@
-# TODO apply decorator to work on disabled text widgets as well
+def modify_contents_of_disabled_text_widget(modify_text_widget_fun):
+    def text_widget_wrapper(*args):
+        text_widget = args[0]
+        was_active = was_widget_active(text_widget)
+        if was_active  != "normal":
+            activate_widgets_before_making_changes(text_widget)
+
+        modify_text_widget_fun(*args)
+
+        if was_active != "normal":
+            deactivate_widgets(text_widget)
+    return text_widget_wrapper
+
+
+@modify_contents_of_disabled_text_widget
+def clear_text_widget(pa_text_widget):
+    pa_text_widget.delete("1.0", "end")
+
+
+@modify_contents_of_disabled_text_widget
 def fill_text_box(pa_text_widget, pa_items):
-    # TODO remove this line and add the abovementioned functionality via a decorator
+    add_entries_into_textbox(pa_text_widget, pa_items)
 
-    was_active = was_widget_active(pa_text_widget)
-    if was_active != "normal":
-        activate_widgets_before_making_changes(pa_text_widget)
 
+def add_entries_into_textbox(pa_text_widget, pa_items):
     for item in pa_items:
         item += "\n"
         pa_text_widget.insert("end", item)
-
-    if was_active != "normal":
-        deactivate_widgets(pa_text_widget)
 
 
 def clear_text_widgets(*pa_widgets):
     for widget in pa_widgets:
         clear_text_widget(widget)
-
-
-def clear_disabled_text_widget(clear_text_widget_fun):
-    def text_widget_wrapper(pa_text_widget):
-        was_active = was_widget_active(pa_text_widget)
-        if was_active  != "normal":
-            activate_widgets_before_making_changes(pa_text_widget)
-
-        clear_text_widget_fun(pa_text_widget)
-
-        if was_active != "normal":
-            deactivate_widgets(pa_text_widget)
-    return text_widget_wrapper
-
-
-@clear_disabled_text_widget
-def clear_text_widget(pa_text_widget):
-    pa_text_widget.delete("1.0", "end")
 
 
 def was_widget_active(pa_widget):
