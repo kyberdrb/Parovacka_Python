@@ -28,3 +28,6 @@ https://stackoverflow.com/questions/129507/how-do-you-test-that-a-python-functio
 https://stackoverflow.com/questions/30889238/python-assertraises-dont-pass-test-if-function-with-parameters/30889475#30889475
 https://stackoverflow.com/questions/3949844/how-to-get-the-screen-size-in-tkinter/3949983#3949983
 https://stackoverflow.com/questions/6569528/python-float-to-int-conversion/6569657#6569657
+http://effbot.org/tkinterbook/grid.htm
+https://stackoverflow.com/questions/18252434/scaling-tkinter-widgets/18270468#18270468
+https://stackoverflow.com/questions/46917915/resizing-in-a-grid-manager-tkinter/46918198#46918198
