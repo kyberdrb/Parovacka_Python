@@ -18,7 +18,7 @@ def clear_text_widget(pa_text_widget):
 
 
 @modify_contents_of_disabled_text_widget
-def fill_text_box(pa_text_widget, pa_items):
+def fill_text_widget(pa_text_widget, pa_items):
     add_entries_into_textbox(pa_text_widget, pa_items)
 
 

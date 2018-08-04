@@ -31,3 +31,4 @@ https://stackoverflow.com/questions/6569528/python-float-to-int-conversion/65696
 http://effbot.org/tkinterbook/grid.htm
 https://stackoverflow.com/questions/18252434/scaling-tkinter-widgets/18270468#18270468
 https://stackoverflow.com/questions/46917915/resizing-in-a-grid-manager-tkinter/46918198#46918198
+TODO add resources
