@@ -6,37 +6,32 @@ from assignment import assignment
 class GuiTk:
     def __init__(self, pa_root_window, pa_window_width, pa_window_height):
         self.master = pa_root_window
-        self.set_up_window(pa_window_width, pa_window_height)
+        self.window_width = pa_window_width
+        self.window_height = pa_window_height
+        self.set_up_window()
         self.add_widgets()
         self.assignments = None
 
-    def set_up_window(self, pa_window_width, pa_window_height):
+    def set_up_window(self):
         self.master.title("Párovačka")
-        window_width = (str(round(pa_window_width)))
-        window_height = (str(round(pa_window_height)))
-        window_dimensions = window_width + "x" + window_height
+        window_dimensions = (str(round(self.window_width))) + \
+                            "x" + \
+                            (str(round(self.window_height)))
         self.master.geometry(window_dimensions)
         self.master.grid()
 
+    # TODO maybe add resizing functionality to all widgets? panedwindow - sash
     def add_widgets(self):
-        self.button_make_couples = Button(
-            self.master,
-            text="Spáruj",
-            width=80,
-            height=50,
-            anchor="center",
-            command=self.make_couples
-        )
+        self.button_make_couples = Button(self.master, text="Spáruj", width=10, command=self.make_couples)
         self.button_make_couples.grid(row=0, column=0, sticky="NSEW")
 
-        self.tw_participants = Text(self.master, width=100, height=100)
-        self.tw_participants.grid(column=1, row=0, sticky="NSEW")
+        self.tw_participants = Text(self.master, width=60)
+        self.tw_participants.grid(row=0, column=1, sticky="NSEW")
 
-        self.tw_couples = Text(self.master, width=120, height=100)
-        tk_ops.deactivate_widgets(self.tw_couples)
-        self.tw_couples.grid(column=2, row=0, sticky="NSEW")
+        self.tw_couples = Text(self.master, state='disabled')
+        self.tw_couples.grid(row=0, column=2, sticky="NSEW")
 
-        self.master.grid_columnconfigure(0, weight=1)
+        self.master.grid_columnconfigure(0, weight=0)
         self.master.grid_columnconfigure(1, weight=1)
         self.master.grid_columnconfigure(2, weight=1)
         self.master.grid_rowconfigure(0, weight=1)
