@@ -4,17 +4,18 @@ from assignment import assignment
 
 
 class GuiTk:
-    def __init__(self, pa_root_window):
+    def __init__(self, pa_root_window, pa_window_width, pa_window_height):
         self.master = pa_root_window
-        self.set_up_window()
+        self.set_up_window(pa_window_width, pa_window_height)
         self.add_widgets()
         self.assignments = None
 
-    def set_up_window(self):
+    def set_up_window(self, pa_window_width, pa_window_height):
         self.master.title("Párovačka")
-
-        # TODO - calculate window dimensions according to the screen resolution
-        self.master.geometry("500x300")
+        window_width = (str(round(pa_window_width)))
+        window_height = (str(round(pa_window_height)))
+        window_dimensions = window_width + "x" + window_height
+        self.master.geometry(window_dimensions)
         self.master.grid()
 
     def add_widgets(self):
@@ -59,5 +60,7 @@ class GuiTk:
 
 if __name__ == "__main__":
     root_window = Tk()
-    GuiTk(root_window)
+    window_width = root_window .winfo_screenwidth() / 2
+    window_height = root_window .winfo_screenheight() / 2
+    GuiTk(root_window, window_width, window_height)
     root_window.mainloop()

@@ -26,3 +26,5 @@ https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 https://stackoverflow.com/questions/27966626/how-to-clear-delete-the-contents-of-a-tkinter-text-widget#27967664
 https://stackoverflow.com/questions/129507/how-do-you-test-that-a-python-function-throws-an-exception/3166985#3166985
 https://stackoverflow.com/questions/30889238/python-assertraises-dont-pass-test-if-function-with-parameters/30889475#30889475
+https://stackoverflow.com/questions/3949844/how-to-get-the-screen-size-in-tkinter/3949983#3949983
+https://stackoverflow.com/questions/6569528/python-float-to-int-conversion/6569657#6569657
