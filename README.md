@@ -10,6 +10,8 @@ How this project idea came up.
 
 `sudo pip3 install pyinstaller`
 
+`pyinstaller --onefile --windowed --name "Parovacka" gui/guitk.py`
+
 ## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget
 https://stackoverflow.com/a/30908374 => Python Tkinter - resize widgets evenly in a window
@@ -52,3 +54,6 @@ https://www.reddit.com/r/learnpython/comments/8v2d74/copied_content_via_pypercli
 https://stackoverflow.com/questions/49146/how-can-i-make-an-exe-file-from-a-python-program/49155#49155
 http://www.pyinstaller.org/
 https://mborgerson.com/creating-an-executable-from-a-python-script/
+http://effbot.org/tkinterbook/label.htm
+http://effbot.org/tkinterbook/grid.htm
+https://stackoverflow.com/questions/10826738/setting-uneven-cell-heights-in-a-tkinter-gui-using-grid/10829076#10829076

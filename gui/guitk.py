@@ -1,4 +1,4 @@
-from tkinter import Tk, Text, Button
+from tkinter import Tk, Text, Button, Label
 import gui.tk_widget_operations as tk_ops
 from assignment import assignment
 import pyperclip
@@ -29,20 +29,27 @@ class GuiTk:
             width=10,
             command=self.make_couples
         )
-        self.button_make_couples.grid(row=0, column=0, sticky="NSEW")
+        self.button_make_couples.grid(row=0, column=0, rowspan=2, sticky="NSEW")
 
-        self.tw_participants = Text(self.master, width=30)
-        self.tw_participants.grid(row=0, column=1, sticky="NSEW")
+        l_participants = Label(self.master, height=1, text="Učastníci")
+        l_participants.grid(row=0, column=1, sticky="NSEW")
+
+        l_couples = Label(self.master, height=1, text="Dvojice")
+        l_couples.grid(row=0, column=2, sticky="NSEW")
+
+        self.tw_participants = Text(self.master, width=30, height=25)
+        self.tw_participants.grid(row=1, column=1, sticky="NSEW")
         self.tw_participants.bind("<Control-c>", lambda e: self.copy_text(e))
 
-        self.tw_couples = Text(self.master, width=60, state='disabled')
-        self.tw_couples.grid(row=0, column=2, sticky="NSEW")
+        self.tw_couples = Text(self.master, width=60, height=25, state='disabled')
+        self.tw_couples.grid(row=1, column=2, sticky="NSEW")
         self.tw_couples.bind("<Control-c>", lambda e: self.copy_text(e))
 
         self.master.grid_columnconfigure(0, weight=0)
         self.master.grid_columnconfigure(1, weight=1)
         self.master.grid_columnconfigure(2, weight=1)
-        self.master.grid_rowconfigure(0, weight=1)
+        self.master.grid_rowconfigure(0, weight=0)
+        self.master.grid_rowconfigure(1, weight=1)
 
     def copy_text(self, event):
         text_to_copy = self.tw_couples.selection_get()
@@ -71,10 +78,9 @@ class GuiTk:
         tk_ops.fill_text_widget(
             self.tw_participants,
             self.assignments.get_gifters_names())
-        # TODO fill tw_couples with entries in this format: gifter <=> giftee
         tk_ops.fill_text_widget(
             self.tw_couples,
-            self.assignments.get_giftees_names())
+            self.assignments.list_of_couples())
 
 
 if __name__ == "__main__":
@@ -83,4 +89,3 @@ if __name__ == "__main__":
     window_height = root_window.winfo_screenheight() / 2
     GuiTk(root_window, window_width, window_height)
     root_window.mainloop()
-# TODO package app with the command "pyinstaller --onefile --windowed --name "Parovacka" gui/guitk.py"

@@ -47,3 +47,6 @@ class TestStringMethods(unittest.TestCase):
 
     def test_check_for_reciprocity(self):
         self.assignments.deny_for_reciprocity()
+
+    def test_list_of_couples(self):
+        self.assignments.list_of_couples()

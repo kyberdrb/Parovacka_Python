@@ -50,3 +50,9 @@ class Assignments:
         for giftee in self._giftees:
             giftees_names.append(giftee.name)
         return giftees_names
+
+    def list_of_couples(self):
+        couples = []
+        for i in range(0, len(self._gifters)):
+            couples.append("{} <=> {}".format(self._gifters[i].name, self._giftees[i].name))
+        return couples
