@@ -15,15 +15,11 @@ class Assignments:
         return participants
 
     def create_couples(self):
-        # TODO add hits via decorator
-        # hit = 0
         while(
                 self.deny_giving_gift_to_myself()
                 or self.deny_for_reciprocity()
         ):
-            # hit += 1
             shuffle(self._giftees)
-        # print(hit)
 
     # TODO unittest for True and False scenario
     def deny_giving_gift_to_myself(self):
@@ -37,8 +33,9 @@ class Assignments:
     def deny_for_reciprocity(self):
         for gifter in self._gifters:
             for giftee in self._giftees:
-                # TODO shorten line
-                if self._gifters.index(gifter) == self._giftees.index(giftee) and self._gifters.index(giftee) == self._giftees.index(gifter):
+                if      self._gifters.index(gifter) == self._giftees.index(giftee) \
+                        and \
+                        self._gifters.index(giftee) == self._giftees.index(gifter):
                     return True
         return False
 

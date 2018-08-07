@@ -1,5 +1,4 @@
 import unittest
-from couple import couple
 from participant import participant
 from assignment import assignment
 
@@ -15,10 +14,6 @@ class TestStringMethods(unittest.TestCase):
         )
         self.third_person = participant.Participant(
             pa_name="Monk",
-        )
-        self.pair = couple.Couple(
-            self.first_person,
-            self.second_person
         )
         self.participants = [
             self.first_person,

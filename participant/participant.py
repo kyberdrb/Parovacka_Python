@@ -2,7 +2,7 @@ class Participant:
 
     def __init__(self, pa_name, pa_has_somebody_to_gift=False):
         self._name = pa_name
-        # TODO make another algorithm for making couples - the first one doesn't need this attribute
+        # I don't use this property in my algorithm
         self._has_somebody_to_gift = pa_has_somebody_to_gift
 
     @property

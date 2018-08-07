@@ -1,7 +1,16 @@
-# Parovacka_python
-Program na vytvaranie dvojic
+# Parovacka_python - Coupling machine
 
-Zdroje:
+How this project idea came up.
+
+## Project dependencies
+
+`sudo pip3 install pyperclip`
+
+## Deployment
+
+`sudo pip3 install pyinstaller`
+
+## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget
 https://stackoverflow.com/a/30908374 => Python Tkinter - resize widgets evenly in a window
 https://www.tutorialspoint.com/python/tk_listbox.htm => pocet poloziek v Listboxe
@@ -10,7 +19,6 @@ https://stackoverflow.com/questions/743806/how-to-split-a-string-into-a-list
 https://stackoverflow.com/questions/976882/shuffling-a-list-of-objects
 https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list
 http://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/ => how to make for loop with index
-
 https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure#24266885
 https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure#24266885
 https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac
@@ -31,4 +39,16 @@ https://stackoverflow.com/questions/6569528/python-float-to-int-conversion/65696
 http://effbot.org/tkinterbook/grid.htm
 https://stackoverflow.com/questions/18252434/scaling-tkinter-widgets/18270468#18270468
 https://stackoverflow.com/questions/46917915/resizing-in-a-grid-manager-tkinter/46918198#46918198
-TODO add resources
+https://stackoverflow.com/questions/16650369/updating-object-properties-in-list-comprehension-way/16650466#16650466
+https://docs.python.org/2/library/copy.html
+https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-given-a-list-containing-it-in-python/176921#176921
+https://stackoverflow.com/questions/3842155/is-there-a-way-to-make-the-tkinter-text-widget-read-only#45417036
+https://stackoverflow.com/questions/37383755/keyboard-shortcuts-with-tkinter-in-python-3/37383887#37383887
+https://stackoverflow.com/questions/11063458/python-script-to-copy-text-to-clipboard/11063483#11063483
+https://stackoverflow.com/questions/38111340/cant-import-pyperclip/45323641#45323641
+https://stackoverflow.com/questions/4073468/how-do-i-get-a-selected-string-in-from-a-tkinter-text-box/4073612#4073612
+https://www.reddit.com/r/learnpython/comments/8v2d74/copied_content_via_pyperclip_does_not_persist_in/
+https://www.reddit.com/r/learnpython/comments/8v2d74/copied_content_via_pyperclip_does_not_persist_in/e1lemx8/
+https://stackoverflow.com/questions/49146/how-can-i-make-an-exe-file-from-a-python-program/49155#49155
+http://www.pyinstaller.org/
+https://mborgerson.com/creating-an-executable-from-a-python-script/
