@@ -89,5 +89,3 @@ if __name__ == "__main__":
     window_height = root_window.winfo_screenheight() / 2
     GuiTk(root_window, window_width, window_height)
     root_window.mainloop()
-
-# TODO README.md - dokoncit dokumentaciu + UML diagramy - diagram tried, priebehy algoritmov

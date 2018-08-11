@@ -1,8 +1,24 @@
-# Parovacka_python - Coupling machine
+# Parovacka_python - Giftee Finder
 
 How this project idea came up.
 
+## Project structure
+
+## UML
+
+## Class diagram
+
+Add class diagram
+
+## Algorithm
+
+Add flowchart from "Assignment" class
+
 ## Project dependencies
+
+The project has been build against Python 3.7.
+
+`pip3 install --upgrade pip`
 
 `sudo pip3 install pyperclip`
 
@@ -57,3 +73,5 @@ https://mborgerson.com/creating-an-executable-from-a-python-script/ <br/>
 http://effbot.org/tkinterbook/label.htm <br/>
 http://effbot.org/tkinterbook/grid.htm <br/>
 https://stackoverflow.com/questions/10826738/setting-uneven-cell-heights-in-a-tkinter-gui-using-grid/10829076#10829076 <br/>
+https://stackoverflow.com/questions/27459257/how-to-represent-an-attributes-data-type-as-an-array-of-objects-on-class-diagra/27459999#27459999 <br/>
+https://stackoverflow.com/questions/4006868/uml-classdiagram-constructor-with-parameters/24703384#24703384 <br/>

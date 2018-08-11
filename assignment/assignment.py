@@ -15,13 +15,20 @@ class Assignments:
         return participants
 
     def create_couples(self):
+        num_of_participants = len(self._gifters)
+
+        if num_of_participants <= 1:
+            return
+        elif num_of_participants == 2:
+            self._giftees[0] = self._gifters[1]
+            self._giftees[1] = self._gifters[0]
+            return
+
         while(
-                self.deny_giving_gift_to_myself()
-                or self.deny_for_reciprocity()
-        ):
+                self.deny_giving_gift_to_myself() or
+                self.deny_for_reciprocity()):
             shuffle(self._giftees)
 
-    # TODO unittest for True and False scenario
     def deny_giving_gift_to_myself(self):
         for gifter in self._gifters:
             for giftee in self._giftees:
@@ -29,7 +36,6 @@ class Assignments:
                     return True
         return False
 
-    # TODO unittest for True and False scenario
     def deny_for_reciprocity(self):
         for gifter in self._gifters:
             for giftee in self._giftees:

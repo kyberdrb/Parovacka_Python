@@ -1,7 +1,7 @@
 def modify_contents_of_disabled_text_widget(modify_text_widget_fun):
     def text_widget_wrapper(*args):
         text_widget = args[0]
-        was_active = was_widget_active(text_widget)
+        was_active = widget_state(text_widget)
         if was_active  != "normal":
             activate_widgets_before_making_changes(text_widget)
 
@@ -33,7 +33,7 @@ def clear_text_widgets(*pa_widgets):
         clear_text_widget(widget)
 
 
-def was_widget_active(pa_widget):
+def widget_state(pa_widget):
     return pa_widget.cget("state")
 
 
