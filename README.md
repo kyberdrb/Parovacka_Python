@@ -2,6 +2,8 @@
 
 How this project idea came up.
 
+## How to use it
+
 ## Project structure
 
 ## UML
@@ -75,3 +77,4 @@ http://effbot.org/tkinterbook/grid.htm <br/>
 https://stackoverflow.com/questions/10826738/setting-uneven-cell-heights-in-a-tkinter-gui-using-grid/10829076#10829076 <br/>
 https://stackoverflow.com/questions/27459257/how-to-represent-an-attributes-data-type-as-an-array-of-objects-on-class-diagra/27459999#27459999 <br/>
 https://stackoverflow.com/questions/4006868/uml-classdiagram-constructor-with-parameters/24703384#24703384 <br/>
+https://stackoverflow.com/questions/46049761/how-to-present-an-abstract-class-in-uml-class-diagram/46049899#46049899<br/>
