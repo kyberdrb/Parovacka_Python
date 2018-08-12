@@ -38,9 +38,13 @@ If the pip commands are failing, try to execute them using `sudo`.
 
 Deployment of the application into one executable/binary file can be done by pyinstaller.
 
+`pip3 install pyinstaller`
+or
 `sudo pip3 install pyinstaller`
 
 `pyinstaller --onefile --windowed --name "Parovacka" gui/guitk.py`
+
+The binary file will then be generated.
 
 ## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget <br/>
