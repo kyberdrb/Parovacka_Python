@@ -10,7 +10,11 @@ How this project idea came up.
 
 ## Class diagram
 
-Add class diagram
+![Class diagram](res/parovacka_class_diagram.png)
+
+Created with [draw.io](draw.io).
+
+The exported XML source file with the class diagram can be found [here](resources/parovacka_class_diagram.xml). Import it into draw.io for editing.
 
 ## Algorithm
 
@@ -20,11 +24,19 @@ Add flowchart from "Assignment" class
 
 The project has been build against Python 3.7.
 
+First of all, upgrade pip:
+
 `pip3 install --upgrade pip`
 
-`sudo pip3 install pyperclip`
+Pyperclip module is needed to support copying from disabled (Text) widget in Tk under (Arch) Linux.
+
+`pip3 install pyperclip`
+
+If the pip commands are failing, try to execute them using `sudo`.
 
 ## Deployment
+
+Deployment of the application into one executable/binary file can be done by pyinstaller.
 
 `sudo pip3 install pyinstaller`
 
@@ -32,13 +44,13 @@ The project has been build against Python 3.7.
 
 ## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget <br/>
-https://stackoverflow.com/a/30908374 => Python Tkinter - resize widgets evenly in a window <br/>
-https://www.tutorialspoint.com/python/tk_listbox.htm => pocet poloziek v Listboxe <br/>
-https://www.youtube.com/watch?v=FueIPFqRyyY => Ulozit obsah Text widgetu do premennej <br/>
+https://stackoverflow.com/questions/24644339/python-tkinter-resize-widgets-evenly-in-a-window/30908374#30908374 <br/>
+https://www.tutorialspoint.com/python/tk_listbox.htm => count number of items in Listbox <br/>
+https://www.youtube.com/watch?v=FueIPFqRyyY => save content of Text widget into a variable<br/>
 https://stackoverflow.com/questions/743806/how-to-split-a-string-into-a-list <br/>
 https://stackoverflow.com/questions/976882/shuffling-a-list-of-objects <br/>
 https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list <br/>
-http://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/ => how to make for loop with index <br/>
+http://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/ => for loop with index <br/>
 https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure#24266885 <br/>
 https://stackoverflow.com/questions/1896918/running-unittest-with-typical-test-directory-structure#24266885 <br/>
 https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac <br/>
