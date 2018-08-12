@@ -2,13 +2,15 @@
 
 How this project idea came up.
 
-## How to use it
+## User guide
+
+
 
 ## Project structure
 
 ## UML
 
-## Class diagram
+### Class diagram
 
 ![Class diagram](res/parovacka_class_diagram.png)
 
@@ -16,7 +18,7 @@ Created with [draw.io](draw.io).
 
 The exported XML source file with the class diagram can be found [here](resources/parovacka_class_diagram.xml). Import it into draw.io for editing.
 
-## Algorithm
+### Algorithm
 
 Add flowchart from "Assignment" class
 
