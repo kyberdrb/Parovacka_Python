@@ -26,17 +26,27 @@ Run the executable, either by double-clicking (Windows/Mac) or via terminal (Lin
 
 `./Parovacka`
 
+The main application window opens up.
+
+![Parovacka window](res/parovacka_window.png)
+
+Enter the participants names into first column - "Účastníci".
+
+Press botton "Spáruj". Afterwards the gifter <=> giftee pairs are displayed in the second column - "Dvojice".
+
 ## Class diagram
 
 ![Class diagram](res/parovacka_class_diagram.png)
 
-This UML diagram had been created with [draw.io](draw.io).
+This UML diagram was created with [draw.io](draw.io).
 
 The exported XML source file with the class diagram can be found [here](resources/parovacka_class_diagram.xml). Import it into draw.io for editing.
 
 ## Project dependencies
 
-The project has been build against Python 3.7 and developed in PyCharm
+The project had been built against Python 3.7 and developed in PyCharm.
+
+The project uses some additional packages.
 
 First of all, upgrade pip:
 
@@ -47,6 +57,10 @@ Pyperclip module is needed to support copying from disabled (Text) widget in Tk 
 `pip3 install pyperclip`
 
 If the pip commands are failing, try to execute them using `sudo`.
+
+(Arch) Linux needs the `xsel` package in order that the application worked correctly:
+
+`sudo pacman -S xsel`
 
 ## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget <br/>
