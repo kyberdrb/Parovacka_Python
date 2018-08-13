@@ -4,27 +4,39 @@ How this project idea came up.
 
 ## User guide
 
+Clone the project to an arbitrary directory:
 
+`git clone https://github.com/kyberdrb/Parovacka_Python.git`
 
-## Project structure
+To generate an executable/binary, we will use the `pyinstaller` package.
 
-## UML
+Install the package:
 
-### Class diagram
+`pip3 install pyinstaller`
+
+or
+
+`sudo pip3 install pyinstaller`
+
+Generate the binary:
+
+`pyinstaller --onefile --windowed --name "Parovacka" gui/guitk.py`
+
+Run the executable, either by double-clicking (Windows/Mac) or via terminal (Linux):
+
+`./Parovacka`
+
+## Class diagram
 
 ![Class diagram](res/parovacka_class_diagram.png)
 
-Created with [draw.io](draw.io).
+This UML diagram had been created with [draw.io](draw.io).
 
 The exported XML source file with the class diagram can be found [here](resources/parovacka_class_diagram.xml). Import it into draw.io for editing.
 
-### Algorithm
-
-Add flowchart from "Assignment" class
-
 ## Project dependencies
 
-The project has been build against Python 3.7.
+The project has been build against Python 3.7 and developed in PyCharm
 
 First of all, upgrade pip:
 
@@ -35,18 +47,6 @@ Pyperclip module is needed to support copying from disabled (Text) widget in Tk 
 `pip3 install pyperclip`
 
 If the pip commands are failing, try to execute them using `sudo`.
-
-## Deployment
-
-Deployment of the application into one executable/binary file can be done by pyinstaller.
-
-`pip3 install pyinstaller`
-or
-`sudo pip3 install pyinstaller`
-
-`pyinstaller --onefile --windowed --name "Parovacka" gui/guitk.py`
-
-The binary file will then be generated.
 
 ## Sources:
 https://stackoverflow.com/questions/42560585/how-do-i-center-text-in-the-tkinter-text-widget <br/>
