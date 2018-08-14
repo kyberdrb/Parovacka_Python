@@ -1,6 +1,6 @@
-# Parovacka_python - Giftee Finder
+# Parovacka - Giftee Finder
 
-How this project idea came up.
+Every year before Christmas I meet up with my classmates from high school to organize a party and talk with each other about what changed. During the party we also exchange gifts. Before the party takes place, every participant will be assigned another participant who should give him, or her, a gift. Every participant has to gift exactly one participant. At the same time, it should not be reciprocal, otherwise it would be boring :) This application solves the issue of selecting the right person among the participants of the party to give a gift to.
 
 ## User guide
 
